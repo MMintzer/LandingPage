@@ -1,5 +1,5 @@
-/* 
- * Some Default Styles are provided for your convenience. 
+/*
+ * Some Default Styles are provided for your convenience.
  * You can start adding your own CSS below line 60.
  */
 
@@ -26,7 +26,10 @@ h2 {
   font-weight: normal;
 }
 
-h1, h2, h3, nav {
+h1,
+h2,
+h3,
+nav {
   font-family: "Saira Extra Condensed", sans-serif;
 }
 
@@ -63,6 +66,164 @@ header {
   background-color: rgba(37, 37, 37, 0.8);
 }
 
-/* 
+/*
  * YOUR CSS:
  */
+#about-paragraph-image {
+  display: flex;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#about-paragraph {
+  flex: 1 4 auto;
+  font-size: 25px;
+}
+
+#aboutmockup {
+  flex: 1 1 auto;
+  align-self: flex-end;
+}
+
+#about {
+  background: rgb(255, 237, 237);
+}
+
+#staff-profiles {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.staff-profile {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 33%;
+  align-self: flex-start;
+  margin-bottom: 10px;
+}
+
+.staff-bio {
+  display: flex;
+  flex-wrap: wrap;
+  font-style: italic;
+  max-width: 80%;
+  text-align: center;
+}
+
+.staff-profile * {
+  align-self: center;
+  margin: 3px;
+}
+
+.headshot {
+  flex: 5 1 50%;
+}
+
+.nav {
+  display: flex;
+  justify-content: right;
+  margin-right: 6px;
+}
+
+.nav * {
+  color: white;
+  font-size: 20px;
+  margin: 6px;
+  align-self: center;
+  text-decoration: none;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  width: 90%;
+  margin: 0 5%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.logo-picture {
+  max-width: 50%;
+  max-height: 50%;
+  vertical-align: center;
+  margin-left: 15px;
+}
+.logo {
+  align-self: center;
+  justify-content: center;
+}
+
+.em {
+  font-size: 35px;
+}
+
+.staff-name {
+  margin: 20px 0 20px 0;
+  font-size: 2em;
+}
+
+#carousel-text {
+  position: absolute;
+  top: 33%;
+  left: 0;
+  right: 0;
+}
+
+.carousel-image {
+  max-width: 100%;
+}
+
+#carousel-text * {
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 2px 2px black;
+}
+
+@media (max-width: 500px) {
+  .staff-profile {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    align-self: flex-start;
+    margin-bottom: 10px;
+  }
+  .carousel-image {
+    max-width: 300%;
+  }
+  #about-paragraph-image {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    align-items: center;
+  }
+  #aboutmockup {
+    margin-right: 25px;
+  }
+  #about-paragraph {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 830px) {
+  #about-paragraph-image {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    align-items: center;
+  }
+  #aboutmockup {
+    margin-right: 70px;
+  }
+  .staff-name {
+    margin: 20px 0 20px 0;
+    font-size: 1.5em;
+  }
+}
