@@ -54,10 +54,59 @@ section h2:after {
 }
 /* Header defaults */
 header {
+  top: 0;
+  left: 24px;
+  right: 24px;
+  position: fixed;
+  z-index: 1;
   background-color: rgba(37, 37, 37, 0.8);
   border-radius: 0 0 8px 8px;
   display: flex;
   justify-content: space-between;
+  opacity: 30%;
+  align-items: center;
+  box-shadow: 0 6px 24px -2px black;
+
+}
+
+.logo-picture {
+  width: 30%;
+  padding: 0 8px 0 8px;
+}
+
+.nav {
+  display: flex;
+  padding: 0 8px 0 8px;
+  font-family: raleway;
+}
+
+.nav-item {
+  margin: 0 8px 0 8px;
+}
+
+header > nav > div:not(:first-child) {
+  margin-left: 12px;
+  padding-left: 12px;
+}
+
+header > nav > div {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.carousel-image {
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#carousel-text {
+  text-align: center;
 }
 
 #about-paragraph-image {
@@ -67,9 +116,27 @@ header {
 
 #about p {
   flex: 3;
+  padding: 0 10px 0 10px;
 }
 
 #about #aboutmockup {
   flex: 2;
   align-self: flex-end;
+}
+
+#staff-profiles {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.staff-profile {
+  flex: 0 0 33%;
+  text-align: center;
+  padding: 0 10px 0 10px;
+}
+
+#footer {
+  background-color: gray;
+  margin-top: 20px;
 }
